@@ -35,7 +35,7 @@ mycontract.methods.DERANUpdate(input1,input2).send(parameter)
 })
 .on('receipt', function(receipt){
 console.timeEnd('Execution time');
-console.log("DERA Node added succesfully!");
+console.log("DERA Node added successfully!");
 })
 .on('error', function(error, receipt) {
 console.log("Failed with error: " + error.reason);
