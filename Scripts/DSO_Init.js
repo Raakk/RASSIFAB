@@ -33,7 +33,7 @@ mycontract.methods.DERAInit(input).send(parameter)
 })
 .on('receipt', function(receipt){
 console.timeEnd('Execution time');
-console.log("DERA added succesfully!");
+console.log("DERA added successfully!");
 })
 .on('error', function(error, receipt) {
 console.log(error.reason);
