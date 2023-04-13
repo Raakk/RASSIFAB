@@ -33,7 +33,7 @@ mycontract.methods.set_addscFW(input).send(parameter)
 })
 .on('receipt', function(receipt){
 //console.timeEnd('Execution time');
-console.log("Address set succesfully!");
+console.log("Address set successfully!");
 })
 .on('error', function(error, receipt) {
 console.log("Failed with error: " + error.reason);
