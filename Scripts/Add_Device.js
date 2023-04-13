@@ -42,7 +42,7 @@ mycontract.methods.addDevice(input1,input2,input3,input4,input5).send(parameter)
 })
 .on('receipt', function(receipt){
 console.timeEnd('Execution time');
-console.log("Device added succesfully!");
+console.log("Device added successfully!");
 })
 .on('error', function(error, receipt) {
 console.log("Failed with error: " + error.reason);
