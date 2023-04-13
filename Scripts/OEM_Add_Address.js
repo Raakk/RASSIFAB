@@ -35,7 +35,7 @@ mycontract.methods.OEMNUpdate(input1,input2).send(parameter)
 })
 .on('receipt', function(receipt){
 console.timeEnd('Execution time');
-console.log("OEM Node added succesfully!");
+console.log("OEM Node added successfully!");
 })
 .on('error', function(error, receipt) {
 console.log("Failed with error: " + error.reason);
