@@ -18,4 +18,4 @@ Thus, make sure to include the right addresses of your local accounts that you m
 
 Before deploying the smart contracts (i.e., SIsInit.sol and SIsFirmware.sol) to your local blockchain, you need to generate the .abi and .bin files by compiling the contracts using the solidity compiler. Then change the corresponding data on the deployment scripts (i.e., DeployInitSC.js and DeployFWSC.js). 
 
-In addition, the accounts used and their corresponding addresses depend also on the local blockchain. Therefore, make sure to change those within the scripts according to you own network setting. 
+In addition, the accounts used and their corresponding addresses depend also on the local blockchain. Therefore, make sure to change those within the scripts according to your own network setting. 
