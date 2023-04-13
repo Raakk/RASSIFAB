@@ -29,12 +29,14 @@ const input3 = prompt("What is your own address? ");
 
 const input4 = prompt("What is the hash of the new firmware? ");
 
-const input5 = prompt("What is the hash of its IPFS link? ");
+const input5 = prompt("What is the IPFS link? ");
 
-const input6 = prompt("What is the new version of the firmware? ");
+const input6 = prompt("What is the secret key? ");
+
+const input7 = prompt("What is the new version of the firmware? ");
 
 console.time('Execution time');
-mycontract.methods.sendFWupdate(input1,input2,input3,input4,input5,input6).send(parameter)
+mycontract.methods.sendFWupdate(input1,input2,input3,input4,input5,input6,input7).send(parameter)
 .on('transactionHash', function(hash){ 
 //console.time('Execution time');
 //console.log(hash);
