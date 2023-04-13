@@ -33,7 +33,7 @@ mycontract.methods.OEMInit(input).send(parameter)
 })
 .on('receipt', function(receipt){
 console.timeEnd('Execution time');
-console.log("OEM added succesfully!");
+console.log("OEM added successfully!");
 })
 .on('error', function(error, receipt) {
 console.log(error.reason);
