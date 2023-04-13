@@ -29,7 +29,7 @@ const input3 = prompt("What is your own address? ");
 
 const input4 = prompt("What is the hash of the current firmware installed on the device? ");
 
-const input5 = prompt("What is the hash of its IPFS link? ");
+const input5 = prompt("What is the IPFS link? ");
 
 const input6 = prompt("What is the version of the firmware? ");
 
