@@ -35,7 +35,7 @@ mycontract.methods.OEMSUpdate(input1,input2).send(parameter)
 })
 .on('receipt', function(receipt){
 console.timeEnd('Execution time');
-console.log("Serial number added succesfully!");
+console.log("Serial number added successfully!");
 })
 .on('error', function(error, receipt) {
 console.log("Failed with error: " + error.reason);
