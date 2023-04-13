@@ -43,7 +43,7 @@ mycontract.methods.UpdateMap_DFW(input1,input2,input3,input4,input5,input6).send
 })
 .on('receipt', function(receipt){
 console.timeEnd('Execution time');
-console.log("Mapping updated succesfully!");
+console.log("Mapping updated successfully!");
 })
 .on('error', function(error, receipt) {
 console.log("Failed with error: " + error.reason);
