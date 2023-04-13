@@ -34,7 +34,7 @@ mycontract.events.Status()
 
 mycontract.events.New_Firmware_Update()
 .on('data', (event) => {
-	console.log("Firmware update request sent with the following metadata, Hash of firmware: " + event.returnValues[3] + " and hash of IPFS link: " + event.returnValues[4]);
+	console.log("Firmware update request sent with the following metadata" +"\n"+ "Hash of firmware: " + event.returnValues[3] + "\n" +"IPFS link: " + event.returnValues[4]+ "\n" + "Secret key: " + event.returnValues[5]);
 })
 .on('error', console.error);
 
