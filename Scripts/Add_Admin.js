@@ -33,7 +33,7 @@ mycontract.methods.addAdmin(input).send(parameter)
 })
 .on('receipt', function(receipt){
 console.timeEnd('Execution time');
-console.log("Admin added succesfully!");
+console.log("Admin added successfully!");
 })
 .on('error', function(error, receipt) {
 console.log(error.reason);
