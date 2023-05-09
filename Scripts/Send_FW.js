@@ -35,8 +35,14 @@ const input6 = prompt("What is the secret key? ");
 
 const input7 = prompt("What is the new version of the firmware? ");
 
+let text = input7;
+
+text = text.replace(/\./g,' ');
+
+const myArray = text.split(" ");
+
 console.time('Execution time');
-mycontract.methods.sendFWupdate(input1,input2,input3,input4,input5,input6,input7).send(parameter)
+mycontract.methods.sendFWupdate(input1,input2,input3,input4,input5,input6,myArray).send(parameter)
 .on('transactionHash', function(hash){ 
 //console.time('Execution time');
 //console.log(hash);
