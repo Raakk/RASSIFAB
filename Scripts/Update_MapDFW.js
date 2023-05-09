@@ -33,8 +33,14 @@ const input5 = prompt("What is the IPFS link? ");
 
 const input6 = prompt("What is the version of the firmware? ");
 
+let text = input6;
+
+text = text.replace(/\./g,' ');
+
+const myArray = text.split(" ");
+
 console.time('Execution time');
-mycontract.methods.UpdateMap_DFW(input1,input2,input3,input4,input5,input6).send(parameter)
+mycontract.methods.UpdateMap_DFW(input1,input2,input3,input4,input5,myArray).send(parameter)
 .on('transactionHash', function(hash){ 
 //console.log(hash);
 })
